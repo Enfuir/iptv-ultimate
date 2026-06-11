@@ -12,3 +12,6 @@ iptv-ultimate = "iptv_ultimate.cli:main"
 [build-system]
 requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["iptv_ultimate*"]

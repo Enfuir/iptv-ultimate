@@ -78,9 +78,9 @@ Commands:
   "source": "data/sources.local.json",
   "channels": [
     {
-      "name": "Big Buck Bunny public test stream",
+      "name": "Big Buck Bunny",
       "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
-      "group-title": "Legal test streams",
+      "group_title": "Legal test streams",
       "country": "INT",
       "language": "en",
       "valid": true

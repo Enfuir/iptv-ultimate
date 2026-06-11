@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T02:32:11.689822+00:00",
+  "generated_at": "2026-06-11T02:34:40.811634+00:00",
   "source": "data/sources.local.json",
   "channels": [
     {
@@ -13,7 +13,7 @@
       "source": "Included legal sample playlist",
       "valid": true,
       "status_code": 200,
-      "latency_ms": 199,
+      "latency_ms": 292,
       "content_type": "audio/mpegurl",
       "error": ""
     },
@@ -28,7 +28,7 @@
       "source": "Included legal sample playlist",
       "valid": true,
       "status_code": 200,
-      "latency_ms": 527,
+      "latency_ms": 619,
       "content_type": "application/vnd.apple.mpegurl",
       "error": ""
     }
