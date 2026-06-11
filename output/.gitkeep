@@ -1,0 +1,2 @@
+# Keep output generated locally out of git.
+# Add this file so the directory exists in fresh clones.

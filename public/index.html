@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IPTV Ultimate Player</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>IPTV Ultimate</h1>
+        <p>Legal-by-default playlist player</p>
+      </div>
+      <label>
+        Playlist JSON
+        <input id="playlistUrl" type="url" value="../output/channels.json" />
+      </label>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar">
+        <input id="search" type="search" placeholder="Search channels..." />
+        <select id="groupFilter" aria-label="Filter by group">
+          <option value="">All groups</option>
+        </select>
+        <select id="countryFilter" aria-label="Filter by country">
+          <option value="">All countries</option>
+        </select>
+        <div id="summary" class="summary"></div>
+        <div id="channels" class="channels"></div>
+      </aside>
+
+      <section class="player-pane">
+        <video id="video" controls autoplay playsinline></video>
+        <div class="now">
+          <h2 id="nowTitle">No channel selected</h2>
+          <p id="nowMeta"></p>
+          <button id="copyUrl" type="button">Copy stream URL</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

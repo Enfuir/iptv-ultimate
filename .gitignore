@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# Build/output
+dist/
+build/
+output/*
+!output/.gitkeep
+!output/channels.m3u
+!output/channels.json
+
+# OS/editor
+.DS_Store
+.env
+.vscode/

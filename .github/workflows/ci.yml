@@ -1,0 +1,28 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install package
+        run: python -m pip install -e .
+      - name: Validate sample legal streams
+        run: python -m iptv_ultimate.cli validate --sources data/sources.local.json --output output/validate.json --timeout 15 --workers 4
+      - name: Build sample playlist
+        run: python -m iptv_ultimate.cli build --sources data/sources.local.json --output output/channels.m3u --json-output output/channels.json --validate --working-only --timeout 15 --workers 4
+      - name: Upload generated playlist
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-playlist
+          path: |
+            output/channels.m3u
+            output/channels.json

@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-06-11T02:32:11.689822+00:00",
+  "source": "data/sources.local.json",
+  "channels": [
+    {
+      "name": "Big Buck Bunny",
+      "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+      "group_title": "Legal test streams",
+      "country": "INT",
+      "language": "en",
+      "tvg_id": "",
+      "logo": "",
+      "source": "Included legal sample playlist",
+      "valid": true,
+      "status_code": 200,
+      "latency_ms": 199,
+      "content_type": "audio/mpegurl",
+      "error": ""
+    },
+    {
+      "name": "Tears of Steel",
+      "url": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8",
+      "group_title": "Legal test streams",
+      "country": "INT",
+      "language": "en",
+      "tvg_id": "",
+      "logo": "",
+      "source": "Included legal sample playlist",
+      "valid": true,
+      "status_code": 200,
+      "latency_ms": 527,
+      "content_type": "application/vnd.apple.mpegurl",
+      "error": ""
+    }
+  ]
+}

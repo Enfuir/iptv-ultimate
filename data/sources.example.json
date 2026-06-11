@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Included legal sample playlist",
+    "url": "data/sample-playlist.m3u",
+    "group-title": "Legal test streams",
+    "country": "INT",
+    "language": "en",
+    "enabled": true,
+    "headers": {}
+  },
+  {
+    "name": "Example legal M3U source",
+    "url": "https://example.com/your-legal-playlist.m3u",
+    "group-title": "Your legal source",
+    "country": "INT",
+    "language": "en",
+    "enabled": false,
+    "headers": {}
+  }
+]
